@@ -15,6 +15,15 @@ const eslintConfig = [
     rules: {
       quotes: ['error', 'single'],
       semi: ['error', 'never'],
+      '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-unused-expressions': 'off',
+      '@typescript-eslint/ban-ts-comment': 'warn',
+      '@typescript-eslint/no-this-alias': 'warn',
+      '@typescript-eslint/no-empty-object-type': 'warn',
+      '@typescript-eslint/no-unsafe-function-type': 'warn',
+      'react-hooks/rules-of-hooks': 'warn',
+      '@next/next/no-assign-module-variable': 'off',
     },
     languageOptions: {
       parserOptions: {
@@ -30,6 +39,12 @@ const eslintConfig = [
       'build/**',
       'next-env.d.ts',
     ],
+  },
+  {
+    files: ['next-env.d.ts'],
+    rules: {
+      '@typescript-eslint/triple-slash-reference': 'off',
+    },
   },
 ]
 

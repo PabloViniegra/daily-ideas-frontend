@@ -1,0 +1,4 @@
+.next/
+.next/**/*
+*.d.ts
+node_modules/
